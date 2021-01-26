@@ -50,3 +50,27 @@
       ]
     },
   ```
+
+### MOCK - json-server
+
+- 安装 json-server
+
+```angular2html
+npm install -g json-server
+```
+
+- 添加 db.json
+
+```json
+{
+  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "profile": { "name": "typicode" }
+}
+```
+
+- 启动
+
+```angular2html
+json-server --watch db.json
+```
