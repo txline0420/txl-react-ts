@@ -53,7 +53,6 @@ export const http = async (
 //自动携带token的
 export const useHttp = () => {
   const { user } = useAuth();
-  // todo Parameters<typeof http>
   return (...[entpoint, config]: [string, Config]) =>
     http(entpoint, { ...config, token: user?.token });
 };
