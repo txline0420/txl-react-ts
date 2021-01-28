@@ -3,6 +3,7 @@ import { SearchPanel } from "./search-panel";
 import { List } from "./list";
 import { cleanObject, useMount } from "../../utils";
 import { useHttp } from "../../utils/http";
+import styled from "@emotion/styled";
 
 /*
     npm start: 读.env.development文件中的REACT_APP_API_URL变量
@@ -32,9 +33,14 @@ export const ProjectListScreen = () => {
   });
 
   return (
-    <div>
+    <Container>
+      <h2>项目列表</h2>
       <SearchPanel param={param} setParam={setParam} users={users} />
       <List list={list} users={users} />
-    </div>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  padding: 3.2rem;
+`;

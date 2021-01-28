@@ -3,6 +3,8 @@ import { ProjectListScreen } from "./screens/project-list";
 import { useAuth } from "./context/auth-context";
 import styled from "@emotion/styled";
 import { Row } from "./components/lib";
+import { ReactComponent as SoftwareLogo } from "./assets/software-logo.svg";
+import { Dropdown, Menu } from "antd";
 
 /**
  *  grid 和 flex 各自的应用场景
@@ -16,18 +18,27 @@ import { Row } from "./components/lib";
 
 //登录状态的app
 export const AuthenticatedApp = () => {
-  const { logout } = useAuth();
+  const { logout, user } = useAuth();
   return (
     <Container>
       <Header>
         <HeaderLeft gap={true}>
-          <h3>Login</h3>
+          <SoftwareLogo width={"18rem"} color={"rgb(38,132,255)"} />
           <h3>项目</h3>
           <h3>用户</h3>
-          <div>其他</div>
         </HeaderLeft>
         <HeaderRight>
-          <button onClick={logout}>登出</button>
+          <Dropdown
+            overlay={
+              <Menu>
+                <Menu.Item key={"logout"}>
+                  <a onClick={logout}>登出</a>
+                </Menu.Item>
+              </Menu>
+            }
+          >
+            <a onClick={(e) => e.preventDefault()}>Hi,{user?.name}</a>
+          </Dropdown>
         </HeaderRight>
       </Header>
       <Nav>Nav</Nav>
@@ -54,34 +65,37 @@ const Container = styled.div`
 //----------- 一级布局 ------------------
 const Header = styled.header`
   grid-area: header;
-  border: darkmagenta solid 1px;
+  //border: darkmagenta solid 1px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 3.2rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
 `;
 
 const Main = styled.main`
   grid-area: main;
-  border: salmon solid 1px;
+  // border: salmon solid 1px;
 `;
 const Nav = styled.nav`
   grid-area: nav;
-  border: teal solid 1px;
+  //border: teal solid 1px;
 `;
 const Aside = styled.aside`
   grid-area: aside;
-  border: red solid 1px;
+  // border: red solid 1px;
 `;
 const Footer = styled.footer`
   grid-area: footer;
-  border: blueviolet solid 1px;
+  //border: blueviolet solid 1px;
 `;
 
 //-------------- 二级布局 ---------------
 const HeaderLeft = styled(Row)`
-  border: gainsboro solid 1px;
+  //border: gainsboro solid 1px;
 `;
 const HeaderRight = styled.div`
-  border: gainsboro solid 1px;
+  //border: gainsboro solid 1px;
 `;
