@@ -25,6 +25,7 @@ export const ProjectListScreen = () => {
 
   useEffect(() => {
     client("projects", { data: cleanObject(param) }).then(setList);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [param]);
 
   //组件初始化时调用，且仅调用一次

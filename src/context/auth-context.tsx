@@ -23,12 +23,12 @@ AuthContext.displayName = "AuthContext";
 
 //页面刷新时，重新设置一下user
 const initUser = async () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let user = null;
   const token = auth.getToken();
   if (token) {
     const data = await http("me", { token });
-    const user = data.user;
-    return user;
+    return data.user;
   }
 };
 
