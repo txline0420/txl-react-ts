@@ -2,6 +2,7 @@ import React from "react";
 import { ProjectListScreen } from "./screens/project-list";
 import { useAuth } from "./context/auth-context";
 import styled from "@emotion/styled";
+import { Row } from "./components/lib";
 
 /**
  *  grid 和 flex 各自的应用场景
@@ -19,10 +20,11 @@ export const AuthenticatedApp = () => {
   return (
     <Container>
       <Header>
-        <HeaderLeft>
+        <HeaderLeft gap={true}>
           <h3>Login</h3>
           <h3>项目</h3>
           <h3>用户</h3>
+          <div>其他</div>
         </HeaderLeft>
         <HeaderRight>
           <button onClick={logout}>登出</button>
@@ -77,9 +79,7 @@ const Footer = styled.footer`
 `;
 
 //-------------- 二级布局 ---------------
-const HeaderLeft = styled.div`
-  display: flex;
-  align-items: center;
+const HeaderLeft = styled(Row)`
   border: gainsboro solid 1px;
 `;
 const HeaderRight = styled.div`
