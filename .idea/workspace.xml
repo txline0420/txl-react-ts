@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8afd9ffc-3db0-4eca-add5-403a86ac2ec9" name="Default Changelist" comment="[+] antd组件优化现有页面">
-      <change afterPath="$PROJECT_DIR$/src/assets/left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/software-logo.svg" afterDir="false" />
+    <list default="true" id="8afd9ffc-3db0-4eca-add5-403a86ac2ec9" name="Default Changelist" comment="[+] @emotion优化页面">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/unauthenticated-app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/unauthenticated-app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/unauthenticated-app/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/unauthenticated-app/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/unauthenticated-app/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/unauthenticated-app/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/authenticated-app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/authenticated-app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/project-list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +71,7 @@
       <workItem from="1611632411080" duration="16808000" />
       <workItem from="1611706012836" duration="18980000" />
       <workItem from="1611731625407" duration="8509000" />
-      <workItem from="1611792606247" duration="10108000" />
+      <workItem from="1611792606247" duration="13766000" />
     </task>
     <task id="LOCAL-00001" summary="[+] 配置prettier">
       <created>1611635190948</created>
@@ -207,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611800313007</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="[+] @emotion优化页面">
+      <created>1611804374635</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611804374635</updated>
+    </task>
+    <task id="LOCAL-00020" summary="[+] @emotion优化页面">
+      <created>1611804394295</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611804394295</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +244,7 @@
     <MESSAGE value="[+] merge" />
     <MESSAGE value="[+] antd+craco" />
     <MESSAGE value="[+] antd组件优化现有页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] antd组件优化现有页面" />
+    <MESSAGE value="[+] @emotion优化页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] @emotion优化页面" />
   </component>
 </project>

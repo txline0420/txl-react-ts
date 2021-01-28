@@ -8,7 +8,6 @@ import { useHttp } from "../../utils/http";
     npm start: 读.env.development文件中的REACT_APP_API_URL变量
     npm build: 读.env文件中的REACT_APP_API_URL变量
  */
-const apiUrl = process.env.REACT_APP_API_URL;
 
 export const ProjectListScreen = () => {
   const [users, setUsers] = useState([]);
