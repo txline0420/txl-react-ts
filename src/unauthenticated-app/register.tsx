@@ -1,9 +1,10 @@
-import React, { FormEvent } from "react";
+import React from "react";
 import { useAuth } from "../context/auth-context";
 import { Button, Form, Input } from "antd";
+import styled from "@emotion/styled";
 
 export const RegisterScreen = () => {
-  const { register, user } = useAuth();
+  const { register } = useAuth();
 
   const handleSubmit = (values: { username: string; password: string }) => {
     register(values);
@@ -24,10 +25,14 @@ export const RegisterScreen = () => {
         <Input type="password" id={"password"} placeholder={"密 码"} />
       </Form.Item>
       <Form.Item>
-        <Button htmlType="submit" type={"primary"}>
+        <LongButton htmlType="submit" type={"primary"}>
           注册
-        </Button>
+        </LongButton>
       </Form.Item>
     </Form>
   );
 };
+
+const LongButton = styled(Button)`
+  width: 100%;
+`;

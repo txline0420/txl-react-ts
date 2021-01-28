@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8afd9ffc-3db0-4eca-add5-403a86ac2ec9" name="Default Changelist" comment="[+] antd+craco">
+    <list default="true" id="8afd9ffc-3db0-4eca-add5-403a86ac2ec9" name="Default Changelist" comment="[+] antd组件优化现有页面">
+      <change afterPath="$PROJECT_DIR$/src/assets/left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/software-logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/project-list/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/unauthenticated-app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/unauthenticated-app/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/unauthenticated-app/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/unauthenticated-app/login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/unauthenticated-app/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/unauthenticated-app/register.tsx" afterDir="false" />
@@ -53,12 +58,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -73,7 +79,7 @@
       <workItem from="1611632411080" duration="16808000" />
       <workItem from="1611706012836" duration="18980000" />
       <workItem from="1611731625407" duration="8509000" />
-      <workItem from="1611792606247" duration="6332000" />
+      <workItem from="1611792606247" duration="10108000" />
     </task>
     <task id="LOCAL-00001" summary="[+] 配置prettier">
       <created>1611635190948</created>
@@ -187,7 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611798305850</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="[+] antd组件优化现有页面">
+      <created>1611800214411</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611800214411</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[+] antd组件优化现有页面">
+      <created>1611800313007</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611800313007</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +237,7 @@
     <MESSAGE value="[+] eslint" />
     <MESSAGE value="[+] merge" />
     <MESSAGE value="[+] antd+craco" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] antd+craco" />
+    <MESSAGE value="[+] antd组件优化现有页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] antd组件优化现有页面" />
   </component>
 </project>
