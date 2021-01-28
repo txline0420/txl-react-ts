@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8afd9ffc-3db0-4eca-add5-403a86ac2ec9" name="Default Changelist" comment="[+] merge">
-      <change afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
+    <list default="true" id="8afd9ffc-3db0-4eca-add5-403a86ac2ec9" name="Default Changelist" comment="[+] antd+craco">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/auth-context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth-context.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/http.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/http.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/project-list/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unauthenticated-app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/unauthenticated-app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unauthenticated-app/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/unauthenticated-app/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unauthenticated-app/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/unauthenticated-app/register.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <workItem from="1611632411080" duration="16808000" />
       <workItem from="1611706012836" duration="18980000" />
       <workItem from="1611731625407" duration="8509000" />
-      <workItem from="1611792606247" duration="4259000" />
+      <workItem from="1611792606247" duration="6332000" />
     </task>
     <task id="LOCAL-00001" summary="[+] 配置prettier">
       <created>1611635190948</created>
@@ -174,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611794865508</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="[+] antd+craco">
+      <created>1611798278731</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611798278731</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[+] antd+craco">
+      <created>1611798305850</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1611798305850</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +216,7 @@
     <MESSAGE value="[+] 登录状态维持" />
     <MESSAGE value="[+] eslint" />
     <MESSAGE value="[+] merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] merge" />
+    <MESSAGE value="[+] antd+craco" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] antd+craco" />
   </component>
 </project>
