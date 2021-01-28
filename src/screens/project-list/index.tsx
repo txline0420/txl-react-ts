@@ -4,6 +4,7 @@ import { List } from "./list";
 import { cleanObject, useMount } from "../../utils";
 import { useHttp } from "../../utils/http";
 import styled from "@emotion/styled";
+import { Typography } from "antd";
 
 /*
     npm start: 读.env.development文件中的REACT_APP_API_URL变量
@@ -23,8 +24,23 @@ export const ProjectListScreen = () => {
   //http请求封装应用
   const client = useHttp();
 
+  //Loading状态
+  const [isLoading, setIsLoading] = useState(false);
+
+  //error状态
+  const [error, setError] = useState<null | Error>(null);
+
   useEffect(() => {
-    client("projects", { data: cleanObject(param) }).then(setList);
+    //开始加载时的loading状态为true
+    setIsLoading(true);
+
+    client("projects", { data: cleanObject(param) })
+      .then(setList)
+      .catch((error) => {
+        setList([]);
+        setError(error);
+      })
+      .finally(() => setIsLoading(false));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [param]);
 
@@ -37,7 +53,10 @@ export const ProjectListScreen = () => {
     <Container>
       <h2>项目列表</h2>
       <SearchPanel param={param} setParam={setParam} users={users} />
-      <List list={list} users={users} />
+      {error ? (
+        <Typography.Text type={"danger"}>{error.message}</Typography.Text>
+      ) : null}
+      <List loading={isLoading} dataSource={list} users={users} />
     </Container>
   );
 };
