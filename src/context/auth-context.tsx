@@ -1,6 +1,8 @@
 import React, { ReactNode, useState } from "react";
 import * as auth from "../auth-provider";
 import { User } from "../screens/project-list/search-panel";
+import { http } from "../utils/http";
+import { useMount } from "../utils";
 
 interface AuthForm {
   username: string;
@@ -19,6 +21,17 @@ const AuthContext = React.createContext<
 >(undefined);
 AuthContext.displayName = "AuthContext";
 
+//页面刷新时，重新设置一下user
+const initUser = async () => {
+  let user = null;
+  const token = auth.getToken();
+  if (token) {
+    const data = await http("me", { token });
+    const user = data.user;
+    return user;
+  }
+};
+
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
   //调用auth-provider中的login方法,用户登录成功以后,就把user中的token设置到window的localStorage的__auth_provider_token__中
@@ -27,6 +40,12 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const register = (form: AuthForm) =>
     auth.register(form).then((user) => setUser(user));
   const logout = () => auth.logout().then(() => setUser(null));
+
+  //组件加载时就初始化user
+  useMount(() => {
+    initUser().then(setUser);
+  });
+
   return (
     <AuthContext.Provider
       children={children}

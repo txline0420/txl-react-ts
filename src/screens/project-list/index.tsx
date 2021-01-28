@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { SearchPanel } from "./search-panel";
 import { List } from "./list";
-import { cleanObject } from "../../utils";
-import qs from "qs";
+import { cleanObject, useMount } from "../../utils";
+import { useHttp } from "../../utils/http";
 
 /*
     npm start: 读.env.development文件中的REACT_APP_API_URL变量
@@ -20,23 +20,17 @@ export const ProjectListScreen = () => {
 
   const [list, setList] = useState([]);
 
-  useEffect(() => {
-    fetch(`${apiUrl}/projects?${qs.stringify(cleanObject(param))}`).then(
-      async (response) => {
-        if (response.ok) {
-          setList(await response.json());
-        }
-      }
-    );
-  }, [param]);
+  //http请求封装应用
+  const client = useHttp();
 
   useEffect(() => {
-    fetch(`${apiUrl}/users`).then(async (response) => {
-      if (response.ok) {
-        setUsers(await response.json());
-      }
-    });
-  }, []);
+    client("projects", { data: cleanObject(param) }).then(setList);
+  }, [param]);
+
+  //组件初始化时调用，且仅调用一次
+  useMount(() => {
+    client("users", {}).then(setUsers);
+  });
 
   return (
     <div>

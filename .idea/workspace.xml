@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8afd9ffc-3db0-4eca-add5-403a86ac2ec9" name="Default Changelist" comment="[+] dev tool">
-      <change afterPath="$PROJECT_DIR$/src/auth-provider.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/authenticated-app.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/auth-context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/unauthenticated-app/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/unauthenticated-app/login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/unauthenticated-app/register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/login/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" afterDir="false" />
+    <list default="true" id="8afd9ffc-3db0-4eca-add5-403a86ac2ec9" name="Default Changelist" comment="[+] 登录注册功能">
+      <change afterPath="$PROJECT_DIR$/src/utils/http.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/auth-context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth-context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/project-list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +19,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="tsconfig.json" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -76,7 +71,8 @@
       <updated>1611632408684</updated>
       <workItem from="1611632411080" duration="16808000" />
       <workItem from="1611706012836" duration="18980000" />
-      <workItem from="1611731625407" duration="5096000" />
+      <workItem from="1611731625407" duration="8509000" />
+      <workItem from="1611792606247" duration="1537000" />
     </task>
     <task id="LOCAL-00001" summary="[+] 配置prettier">
       <created>1611635190948</created>
@@ -134,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611714174120</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[+] 登录注册功能">
+      <created>1611736777194</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611736777194</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[+] 登录注册功能">
+      <created>1611736806643</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611736806643</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +169,7 @@
     <MESSAGE value="[+] js改造成ts" />
     <MESSAGE value="[+] login+json-server middleware" />
     <MESSAGE value="[+] dev tool" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] dev tool" />
+    <MESSAGE value="[+] 登录注册功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] 登录注册功能" />
   </component>
 </project>
