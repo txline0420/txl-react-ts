@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8afd9ffc-3db0-4eca-add5-403a86ac2ec9" name="Default Changelist" comment="[+] 去除浏览器上的提示信息">
+    <list default="true" id="8afd9ffc-3db0-4eca-add5-403a86ac2ec9" name="Default Changelist" comment="[+] loading、error">
+      <change afterPath="$PROJECT_DIR$/src/utils/project.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/use-async.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/project-list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/index.tsx" afterDir="false" />
@@ -17,8 +20,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="tsconfig.json" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -74,7 +77,9 @@
       <workItem from="1611632411080" duration="16808000" />
       <workItem from="1611706012836" duration="18980000" />
       <workItem from="1611731625407" duration="8509000" />
-      <workItem from="1611792606247" duration="21398000" />
+      <workItem from="1611792606247" duration="21854000" />
+      <workItem from="1611825803110" duration="18000" />
+      <workItem from="1611880277805" duration="4006000" />
     </task>
     <task id="LOCAL-00001" summary="[+] 配置prettier">
       <created>1611635190948</created>
@@ -272,7 +277,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611823858809</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="[+] loading、error">
+      <created>1611825157055</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1611825157055</updated>
+    </task>
+    <task id="LOCAL-00030" summary="[+] loading、error">
+      <created>1611825173625</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1611825173625</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +327,7 @@
     <MESSAGE value="[+] Row 自定义组件" />
     <MESSAGE value="[+] 优化项目列表页面" />
     <MESSAGE value="[+] 去除浏览器上的提示信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] 去除浏览器上的提示信息" />
+    <MESSAGE value="[+] loading、error" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] loading、error" />
   </component>
 </project>
